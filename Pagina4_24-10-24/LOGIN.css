@@ -1,0 +1,159 @@
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 3em;
+    text-overflow: ellipsis;
+font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif}
+
+h2 {
+    font-size: 2em;
+    color: #000000;
+    text-align: center;
+    
+}
+h3 {
+
+    font-size: 1em;
+    color: #000000;
+    text-align:left;
+    
+
+
+}
+
+
+p {
+    font-size: 1.5em;
+}
+
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+
+}
+
+
+
+/* Cuadro de logo */
+.container {
+    max-width: 1400px;
+    margin: 0;
+}
+
+/* Encabezado completo */
+header {
+   
+    position: fixed; /* Fija el menú en la parte superior */
+    top: 0px ; /* Asegura que esté en la parte superior */
+    left: 0; /* Asegura que esté alineado a la izquierda */
+    width: 100%; /* Ocupa todo el ancho */
+    height: 70px; /* Corregido de 70 px a 70px */
+    background-color: #545960f7;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+   padding: 10px 10px ; /* Corregido de 10 a 10px */
+    z-index: 10;
+}
+
+/* Agrega un margen superior al contenido principal */
+main {
+    padding-top: 80px; /* Ajusta este valor para que no se superponga con el menú */
+}
+
+
+
+header .logo {
+    display: flex;
+    margin: 0;
+    padding: 8px 10px;
+    font-weight: bold;
+    color: rgb(249, 13, 13);
+    font-size: 3em;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+}
+
+/* Cuadro de menú */
+header nav {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    padding-bottom: 20px;
+    list-style: none;
+    overflow: hidden;
+}
+
+/* Letras del menú */
+header a {
+    padding: 0px 2px; /* Corregido de 10 px 20px a 10px 20px */
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+
+    margin-right: 15px;/*espacio entre menus*/
+}
+
+header b {
+    padding: 0px 2px; /* Corregido de 10 px 20px a 10px 20px */
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(250, 5, 5);
+    margin-right: 15px;
+}
+
+/* Color al seleccionar el menú */
+header a:hover {
+    transform: translateY(3px);
+    color: rgb(237, 33, 10);
+}
+
+/* Estilos para el contenedor del iframe */
+#iframe-container {
+
+    
+    border: 2px solid #ff0303;
+    border-radius: 10px;/*redondeado de equinas*/
+    padding: 10px;/*margen entre contenedores*/
+    box-shadow: 0 2px 5px rgba(67, 12, 232, 0.815);/*Sombra de contenedor*/
+    width: 90%; /* Ancho responsivo */
+    max-width: 2000px; /* Máximo ancho */
+    margin:auto; /* Centra horizontalmente y agrega margen */   
+}
+
+iframe  { /*cuadro dentro del rojo*/
+   
+    width:100%; /* Se ajusta al contenedor */
+    height: 720px; /* Ajusta según necesites */
+    border:outset;
+}
+
+
+.divider {
+    width: 100%;            /* Ancho del cuadro */
+    height: 720px;           /* Altura del cuadro */
+    background-color: rgb(237, 126, 126); /* Color del cuadro */
+    margin: 20px 0;       /* Espacio arriba y abajo del cuadro */
+}
+
+.back-to-top {
+    position: fixed;  /* Fijo en la pantalla */
+    bottom: 20px;     /* Espaciado desde la parte inferior */
+    right: 20px;      /* Espaciado desde la derecha */
+    background-color: blue; /* Color de fondo */
+    color: white;     /* Color del texto */
+    padding: 10px 15px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    text-decoration: none; /* Sin subrayado */
+}
+
+.back-to-top:hover {
+    background-color: darkblue; /* Color al pasar el ratón */
+}
